@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 3em;
+}
+
+.header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.header p {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; /* 讓每個 li 平均分佈 */
+    background-color: #333;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.navbar li {
+    flex-grow: 1; /* 讓每個 li 均分整條 navbar 的寬度 */
+    text-align: center; /* 讓文字置中 */
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    padding: 0.5em;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+/* Dropdown Styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content li {
+    width: 100%;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 20px 80px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Main Content Styles */
+main {
+    padding: 2em;
+    text-align: center;
+}
+
+main a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+.footer-text {
+    background-color: #f2f2f2; /* 這裡可以換成你想要的背景顏色 */
+    padding: 4em;
+    text-align: left;
+}
+
+/* Media Queries */
+@media all {
+    body {
+        font-size: 1em;
+    }
+}
+
+@media print {
+    body {
+        color: black;
+        background-color: white;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
