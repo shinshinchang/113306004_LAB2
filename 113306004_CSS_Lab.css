@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     color: #333;
@@ -7,7 +6,6 @@ body {
     padding: 0;
 }
 
-/* Header Styles */
 .header {
     background-color: #3498db;
     color: #fff;
@@ -16,6 +14,7 @@ body {
 }
 
 .header h1 {
+    font-family: 'Arial', sans-serif;
     font-size: 2em;
     margin: 0;
 }
@@ -27,9 +26,13 @@ body {
 
 /* Navbar Styles */
 .navbar {
+    position: absolute;
+    top: 13em;
+    left: 0em;
+    width: 20em;
     width: 100%;
     display: flex;
-    justify-content: space-evenly; /* 讓每個 li 平均分佈 */
+    justify-content: space-evenly;
     background-color: #333;
     padding: 0;
     list-style: none;
@@ -37,8 +40,8 @@ body {
 }
 
 .navbar li {
-    flex-grow: 1; /* 讓每個 li 均分整條 navbar 的寬度 */
-    text-align: center; /* 讓文字置中 */
+    flex-grow: 1;
+    text-align: center;
 }
 
 .navbar a {
@@ -53,7 +56,6 @@ body {
     background-color: #555;
 }
 
-/* Dropdown Styles */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -82,7 +84,6 @@ body {
     display: block;
 }
 
-/* Main Content Styles */
 main {
     padding: 2em;
     text-align: center;
@@ -98,12 +99,11 @@ main a:hover {
 }
 
 .footer-text {
-    background-color: #f2f2f2; /* 這裡可以換成你想要的背景顏色 */
+    background-color: #f2f2f2;
     padding: 4em;
     text-align: left;
 }
 
-/* Media Queries */
 @media all {
     body {
         font-size: 1em;
